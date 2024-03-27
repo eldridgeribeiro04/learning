@@ -1,0 +1,28 @@
+h1{
+    color: Blue
+}
+
+li{
+    color: rgb(245, 66, 66, 0.8);
+}
+
+p{
+    color: #444452;
+}
+
+body{
+    background: url(https://imgs.search.brave.com/sUmQuV2_M5EBEv1D8pMo82UvJ3POgVyV0J3fYcoLxhU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzQzLzkwLzM3/LzM2MF9GXzQzOTAz/NzMyX1gxWjJnenk0/OTdhaXNnTUU2MmNy/bVUwMFNmOHNtUDU5/LmpwZw);
+    background-repeat: no-repeat;
+}
+
+div{
+    background: gray;
+    border-color: blue;
+    border-width: thick;
+    border-style: dotted;
+}
+
+span{
+    background: red;
+    color: black
+}

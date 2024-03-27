@@ -1,0 +1,20 @@
+h1{
+    font-family: 'arial';
+}
+
+#first{
+    font-size: 20px
+}
+
+#second{
+    font-size: 1.0em;
+}
+
+p{
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+h1{
+  font-family: "Unkempt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+table{
+    margin: auto
+}
+
+td{
+    height: 400px;
+    width: 200px;
+    background-color: black;
+    border: 6px solid white
+}
+
+#one{
+    background-color: #ECE4B7;
+}
+
+#two{
+    background-color: #D9DD92;
+}
+
+#three{
+    background-color: #EABE7C;
+}
+
+#four{
+    background-color: #DD6031;
+}
+
+#five{
+    background-color: #311E10;
+}
