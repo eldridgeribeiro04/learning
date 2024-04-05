@@ -4,13 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help page Django</title>
     <link rel="stylesheet" href="{% static 'css/my_style.css' %}">
-    <title>R7 bike</title>
 </head>
 <body>
 
-    <h1>This is a picture of Yamaha R7.</h1>
-    <img src="{% static 'images/r7_bike.jpg' %}" alt="Image didnt show">
+    <h1>Hi, welcome to django lvl 2.</h1>
+    <h2>Here are your access records.</h2>
+
+    <div class="django2">
+        {% if access_records %}
+            <table>
+                <thead>
+                    <th>Site Name</th>
+                    <th>Date</th>
+                </thead>
+
+                {% for acc in access_records %}
+                <tr>
+                    <td>{{acc.name}}</td>
+                    <td>{{acc.date}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <p>No access records found!</p>
+            {% endif %}
+
+    </div>
     
 </body>
 </html>

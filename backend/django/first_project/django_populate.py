@@ -32,7 +32,7 @@ def populate(N=5):
         acc_rec = AccessRecord.objects.get_or_create(name=webpg, date=fakedate)[0]
         
 
-if __name__ != '__main':
+if __name__ == '__main':
     print("Populating script")
     populate(N=20)
     print("Populating complete")
