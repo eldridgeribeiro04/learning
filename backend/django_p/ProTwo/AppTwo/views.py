@@ -1,9 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from AppTwo.models import Users
+from .forms import UserForm
 
 # Create your views here.
 def index(request):
-    user_data = Users.objects.order_by('first_name')
-    user_dict = {'user_records': user_data}
-    return render(request, 'MyApp/index.html', context=user_dict)
+    if request.method == 'POST':
+        form = UserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('success/')
+    else:
+        form = UserForm()
+    return render(request, 'MyApp/index.html', {'form': form})
+
+
+def success(request):
+    return render(request, 'MyApp/success.html')
